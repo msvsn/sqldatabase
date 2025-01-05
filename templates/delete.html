@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видалити людину</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Видалити людину</h1>
+        <form action="/delete" method="POST" class="form">
+            <h3>Обрати людей для видалення:</h3>
+            {% for person in people %}
+            <div class="checkbox-group">
+                <input type="checkbox" id="person{{ person[0] }}" name="delete_ids" value="{{ person[0] }}">
+                <label for="person{{ person[0] }}">{{ person[1] }} ({{ person[3] }} років)</label>
+            </div>
+            {% endfor %}
+            <button type="submit" class="button delete-button">Видалити</button>
+        </form>
+        <a href="/" class="button back-button">На головну</a>
+    </div>
+</body>
+</html>

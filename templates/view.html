@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перегляд бази даних</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Перегляд бази даних</h1>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th class="header-col"><a href="?sort_by=id&order={{ 'desc' if sort_by == 'id' and order == 'asc' else 'asc' }}">ID</a></th>
+                    <th class="header-col"><a href="?sort_by=name&order={{ 'desc' if sort_by == 'name' and order == 'asc' else 'asc' }}">Ім'я</a></th>
+                    <th class="header-col"><a href="?sort_by=surname&order={{ 'desc' if sort_by == 'surname' and order == 'asc' else 'asc' }}">Прізвище</a></th>
+                    <th class="header-col"><a href="?sort_by=age&order={{ 'desc' if sort_by == 'age' and order == 'asc' else 'asc' }}">Вік</a></th>
+                    <th class="header-col"><a href="?sort_by=city&order={{ 'desc' if sort_by == 'city' and order == 'asc' else 'asc' }}">Місто</a></th>
+                    <th class="header-col"><a href="?sort_by=hobby&order={{ 'desc' if sort_by == 'hobby' and order == 'asc' else 'asc' }}">Хобі</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for person in people %}
+                <tr>
+                    <td>{{ person[0] }}</td>
+                    <td>{{ person[1] }}</td>
+                    <td>{{ person[2] }}</td>
+                    <td>{{ person[3] }}</td>
+                    <td>{{ person[4] }}</td>
+                    <td>{{ person[5] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="/" class="button back-button">На головну</a>
+    </div>
+</body>
+</html>

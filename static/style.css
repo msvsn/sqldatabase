@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5); /* М'який градієнт */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background: #74c69d;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.button:hover {
+    background: #40916c;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.back-button {
+    background: #ffcccb;
+    color: #333;
+}
+
+.back-button:hover {
+    background: #f08080;
+}
+
+.form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input, .form select, .form button {
+    font-size: 1em;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.data-table th {
+    background: #5bc0be;
+    color: #fff;
+    font-weight: bold;
+}
+
+.data-table th a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.data-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.data-table tr:nth-child(odd) {
+    background: #fff;
+}
+
+.data-table tr:hover {
+    background: #f1f1f1;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

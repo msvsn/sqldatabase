@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>япідарас</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Додати людину</h1>
+        <form action="/add" method="POST" class="form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" required>
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" min="0" required>
+            <label for="city">Місто:</label>
+            <input type="text" id="city" name="city" required>
+            <label for="hobby">Хобі:</label>
+            <input type="text" id="hobby" name="hobby" required>
+            <button type="submit" class="button">Додати</button>
+        </form>
+        <a href="/" class="button back-button">На головну</a>
+    </div>
+</body>
+</html>
