@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перевірка коду</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Введіть код підтвердження</h1>
+        <form action="/verify" method="POST" class="form">
+            <label for="code">Код:</label>
+            <input type="text" id="code" name="code" required>
+            <button type="submit" class="button">Підтвердити</button>
+        </form>
+    </div>
+</body>
+</html>
