@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фідбек</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Нам похуй. Ідіть нахуй</h1>
+        <form action="/feedback" method="POST" class="feedback-form">
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="button">Надіслати</button>
+        </form>
+    </div>
+</body>
+</html>
